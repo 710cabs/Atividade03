@@ -1,23 +1,30 @@
-
+ 
 import java.time.LocalDate;
 
 public abstract class BasePessoa{
     
     protected int codigo;
-
     protected String nome;
-
     protected String endereco;
-
     protected String telefone;
-
     protected LocalDate dataNascimento;
-
     protected String rg;
-
     protected String cpf;
-
     protected LocalDate dataInsercao;
+
+    public BasePessoa() {
+    }
+
+    public BasePessoa(int codigo, String nome, String endereco, String telefone, LocalDate dataNascimento, String rg, String cpf, LocalDate dataInsercao) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.dataNascimento = dataNascimento;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.dataInsercao = dataInsercao;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -83,6 +90,6 @@ public abstract class BasePessoa{
         this.dataInsercao = dataInsercao;
     }
 
-    public BasePessoa() {
-    }
+}
+
 
