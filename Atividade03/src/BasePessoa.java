@@ -12,17 +12,6 @@ public abstract class BasePessoa{
     protected String cpf;
     protected LocalDate dataInsercao;
 
-    public BasePessoa(int codigo, String nome, String endereco, String telefone, LocalDate dataNascimento, String rg, String cpf, LocalDate dataInsercao) {
-        this.codigo = codigo;
-        this.nome = nome;
-        this.endereco = endereco;
-        this.telefone = telefone;
-        this.dataNascimento = dataNascimento;
-        this.rg = rg;
-        this.cpf = cpf;
-        this.dataInsercao = dataInsercao;
-    }
-
     public int getCodigo() {
         return codigo;
     }
@@ -86,6 +75,18 @@ public abstract class BasePessoa{
     public void setDataInsercao(LocalDate dataInsercao) {
         this.dataInsercao = dataInsercao;
     }
+
+    public BasePessoa(int codigo, String nome, String endereco, String telefone, LocalDate dataNascimento, String rg, String cpf, LocalDate dataInsercao) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.dataNascimento = dataNascimento;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.dataInsercao = dataInsercao;
+    }
+
 
 }
 
