@@ -12,9 +12,6 @@ public abstract class BasePessoa{
     protected String cpf;
     protected LocalDate dataInsercao;
 
-    public BasePessoa() {
-    }
-
     public BasePessoa(int codigo, String nome, String endereco, String telefone, LocalDate dataNascimento, String rg, String cpf, LocalDate dataInsercao) {
         this.codigo = codigo;
         this.nome = nome;
